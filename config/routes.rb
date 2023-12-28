@@ -5,4 +5,9 @@ Rails.application.routes.draw do
   delete :logout, to: "session#logout"
   get :logged_in, to: "session#logged_in"
   root to: "static#home"
+
+
+
+  get '/favicon.ico', to: 'application#favicon'
+
 end
